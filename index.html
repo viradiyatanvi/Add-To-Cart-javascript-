@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MyStore | Add to Cart</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/unicons.css" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="container nav-wrapper">
+      <div class="logo">MyStore</div>
+      <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#footer">Footer</a>
+      </nav>
+      <div class="rightside">
+        <div class="cartbox">
+          <i class="uil uil-shopping-cart"></i>
+          <span class="quantity">0</span>
+        </div>
+        <i class="uil uil-search"></i>
+        <i class="uil uil-user"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>Welcome to MyStore</h1>
+      <p>Find your perfect product from thousands of options</p>
+      <a href="#products" class="cta-button">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <div class="container" id="products">
+    
+
+    <!-- searching -->
+    <div class="search-box" style="text-align: center; margin-bottom: 20px;">
+      <input type="text" id="searchInput" placeholder="Search products..." style="padding: 8px 12px; width: 250px; border-radius: 6px; border: 1px solid #ccc;">
+    </div>
+    
+
+
+    <h2>Product Items</h2>
+    <div class="productbox"></div>
+  </div>
+
+
+  <section class="container aboutus" id="about">
+    <div class="heading-about">
+      <h2>About Us</h2>
+      <p>Welcome to ShopEase, your ultimate destination for effortless online shopping!</p>
+    </div>
+    <div class="about-container">
+      <div>
+        <div class="w-2">
+          <img src="./images/banner.jpg" alt="">
+        </div>
+        <div class="w-2">
+          <h3>We're here to get as many people shoping as possible.</h3>
+          <p>
+            At <strong>ShopEase</strong>, we believe that shopping should be simple, enjoyable, and accessible to everyone. 
+            Founded with a vision to revolutionize online shopping, we offer a wide range of quality products—from fashion and electronics 
+            to home essentials—delivered right to your doorstep.
+          </p>
+          <p>
+            Thank you for choosing ShopEase. Your satisfaction is our top priority!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container contact" id="contact">
+    <div class="contact-container">
+      <div>
+        <div class="w-2">
+          <div class="contact-contain">
+            <h2>Contact Us</h2>
+          <p>Need to get in touch with us? Either fill out the form with your inquiry or find the department email you'd like  to cntact  below.</p>
+          </div>
+        </div>
+        <div class="w-2">
+          <form action="">
+            <label for="">First name*</label>
+            <input type="text" name="fname">
+
+            <label for="">Last name*</label>
+            <input type="text" name="lname">
+
+            <label for="">Email*</label>
+            <input type="text" name="email">
+
+            <label for="">What can we help you with?</label>
+            <textarea name="" id=""></textarea>
+
+            <button type="submit" name="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="footer">
+    <div class="footer-container">
+      <!-- Brand Info -->
+      <div class="footer-section">
+        <h2 class="logo">ShopEase</h2>
+        <p>Your one-stop shop for quality products and amazing deals. Experience hassle-free shopping with us!</p>
+      </div>
+  
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="#"><i class="fas fa-shopping-bag"></i> Shop</a></li>
+          <li><a href="#"><i class="fas fa-info-circle"></i> About Us</a></li>
+          <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+      </div>
+  
+      <!-- Customer Service -->
+      <div class="footer-section">
+        <h3>Customer Service</h3>
+        <ul>
+          <li><a href="#"><i class="fas fa-shipping-fast"></i> Shipping Info</a></li>
+          <li><a href="#"><i class="fas fa-undo"></i> Returns & Refunds</a></li>
+          <li><a href="#"><i class="fas fa-lock"></i> Privacy Policy</a></li>
+          <li><a href="#"><i class="fas fa-question-circle"></i> FAQs</a></li>
+        </ul>
+      </div>
+  
+      <!-- Social Media -->
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+          <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+          <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+          <a href="#"><i class="fab fa-youtube"></i> YouTube</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>&copy; 2025 ShopEase. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+
+  <!-- Cart Panel -->
+  <div class="cartcontainer">
+    <h2>Cart Items</h2>
+    <ul></ul>
+    <div class="bottomside">
+      <div class="total">Total <small>$</small><span>0</span></div>
+      <button class="checkoutbtn">Checkout</button>
+      <div class="closebtn">Close</div>
+    </div>
+    <p class="confirmation" style="display: none;">Order placed successfully!</p>
+  </div>
+
+  <!-- Script -->
+  <script>
+    let items = [];
+    let storeProduct = [];
+
+    const productBox = document.querySelector(".productbox");
+    const cartbox = document.querySelector('.cartbox');
+    const closebtn = document.querySelector('.closebtn');
+    const quantity = document.querySelector('.quantity');
+    const cartcontainer = document.querySelector('.cartcontainer ul');
+    const total = document.querySelector('.total span');
+    const checkoutbtn = document.querySelector('.checkoutbtn');
+    const confirmation = document.querySelector('.confirmation');
+    const cartPanel = document.querySelector('.cartcontainer');
+
+    async function fetchItems() {
+      try {
+        const res = await fetch("https://fakestoreapi.com/products");
+        const data = await res.json();
+
+        if (res.ok) {
+          items = data.map((item) => ({
+            id: item.id,
+            name: item.title,
+            image: item.image,
+            star: Math.floor(Math.random() * 5) + 1,
+            price: Math.floor(item.price)
+          }));
+          showProducts();
+        } else {
+          throw new Error("Failed to fetch data");
+        }
+      } catch (err) {
+        console.error("Error fetching data:", err);
+        alert("Something went wrong! Try again.");
+      }
+    }
+
+    // function showProducts() {
+    //   let showItem = items.map((item, key) => {
+    //     let stars = "";
+    //     for (let i = 1; i <= item.star; i++) {
+    //       stars += `<i class="uil uil-favorite"></i>`;
+    //     }
+    //     return `<div class="product">
+    //       <div class="imgbox">
+    //         <img src="${item.image}" alt="">
+    //       </div>
+    //       <div class="textdata">
+    //         <div class="name">${item.name}</div>
+    //         <div class="price"><small>$</small>${item.price}</div>
+    //         <div class="rating">${stars}</div>
+    //       </div>
+    //       <button onClick="addtocart(${key})">Add to cart</button>
+    //     </div>`;
+    //   }).join('');
+    //   productBox.innerHTML = showItem;
+    // }
+
+
+    function showProducts(filtered = items) {
+  let showItem = filtered.map((item, key) => {
+    let stars = "";
+    for (let i = 1; i <= item.star; i++) {
+      stars += `<i class="uil uil-favorite"></i>`;
+    }
+    return `<div class="product">
+      <div class="imgbox">
+        <img src="${item.image}" alt="">
+      </div>
+      <div class="textdata">
+        <div class="name">${item.name}</div>
+        <div class="price"><small>$</small>${item.price}</div>
+        <div class="rating">${stars}</div>
+      </div>
+      <button onClick="addtocart(${item.id - 1})">Add to cart</button>
+    </div>`;
+  }).join('');
+  productBox.innerHTML = showItem;
+}
+
+
+    cartbox.addEventListener('click', () => {
+      cartPanel.classList.add('active');
+      confirmation.style.display = "none";
+    });
+
+    closebtn.addEventListener('click', () => {
+      cartPanel.classList.remove('active');
+    });
+
+    function addtocart(id) {
+      if (storeProduct[id] == null) {
+        storeProduct[id] = items[id];
+        storeProduct[id].quantity = 1;
+      } else {
+        storeProduct[id].quantity += 1;
+      }
+      reloadProduct();
+    }
+
+    function reloadProduct() {
+      cartcontainer.innerHTML = '';
+      let count = 0;
+      let totalCount = 0;
+      storeProduct.forEach((item, key) => {
+        if (!item) return;
+        count += item.quantity;
+        totalCount += item.price * item.quantity;
+        let productLi = document.createElement('li');
+        productLi.innerHTML = `
+          <img src="${item.image}" alt="">
+          <div class="name">${item.name}</div>
+          <div class="price"><small>$</small>${item.price}</div>
+          <div class="changequantity">
+            <button onClick="changeCount(${key},${item.quantity - 1})">-</button>
+            <span>${item.quantity}</span>
+            <button onClick="changeCount(${key},${item.quantity + 1})">+</button>
+          </div>`;
+        cartcontainer.append(productLi);
+      });
+      quantity.style.display = "block";
+      quantity.innerHTML = count;
+      total.innerHTML = totalCount;
+    }
+
+    function changeCount(key, qty) {
+      if (qty === 0) {
+        delete storeProduct[key];
+      } else {
+        storeProduct[key].quantity = qty;
+      }
+      reloadProduct();
+    }
+
+    checkoutbtn.addEventListener("click", () => {
+      if (storeProduct.length === 0 || storeProduct.every(item => !item)) {
+        alert("Cart is empty!");
+        return;
+      }
+
+      storeProduct = [];
+      reloadProduct();
+
+      confirmation.textContent = "✅ Order placed successfully!";
+      confirmation.style.display = "block";
+
+      setTimeout(() => {
+        cartPanel.classList.remove('active');
+        confirmation.style.display = "none";
+      }, 2000);
+
+      quantity.innerHTML = 0;
+    });
+
+    fetchItems();
+
+
+    // searching
+
+    document.getElementById("searchInput").addEventListener("input", function () {
+  const query = this.value.toLowerCase();
+  const filteredItems = items.filter(item => item.name.toLowerCase().includes(query));
+  showProducts(filteredItems);
+});
+
+
+  </script>
+</body>
+</html>
